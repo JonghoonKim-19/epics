@@ -18,6 +18,14 @@ record(bo, "RTP-WBool:Test") {
   field(ONAM, "1")
 }
 
+record(bo, "RTP-WBool:Test2") {
+  field(DTYP, "rtpSyncWriteBO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2001)")
+  field(ZNAM, "0")
+  field(ONAM, "1")
+}
+
 #record(ao, "RTP-Write3") {
 #  field(DTYP, "rtpSyncWriteAO")
 #  field(VAL, "0")
