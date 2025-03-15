@@ -1,0 +1,25 @@
+#record(ao, "RTP-Write") {
+#  field(DTYP, "rtpSyncWriteAO")
+#  field(VAL, "0")
+#  field(OUT, "@RTP(0,139)")
+#}
+
+record(ao, "RTP-WFloat:Test") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2000)")
+}
+
+record(bo, "RTP-WBool:Test") {
+  field(DTYP, "rtpSyncWriteBO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2000)")
+  field(ZNAM, "0")
+  field(ONAM, "1")
+}
+
+#record(ao, "RTP-Write3") {
+#  field(DTYP, "rtpSyncWriteAO")
+#  field(VAL, "0")
+#  field(OUT, "@RTP(0,171)")
+#}
