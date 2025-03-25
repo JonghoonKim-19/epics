@@ -4,11 +4,86 @@
 #  field(OUT, "@RTP(0,139)")
 #}
 
-record(ao, "RTP-WFloat:Test") {
+record(ao, "RTP-WFloat:Log_Power") {
   field(DTYP, "rtpSyncWriteAO")
   field(VAL, "0")
   field(OUT, "@RTP(0,2000)")
 }
+record(ao, "RTP-WFloat:PZR_NR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2001)")
+}
+record(ao, "RTP-WFloat:PZR_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2002)")
+}
+record(ao, "RTP-WFloat:SG1_L_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2003)")
+}
+record(ao, "RTP-WFloat:SG2_L_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2004)")
+}
+record(ao, "RTP-WFloat:SG1_LL_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2005)")
+}
+record(ao, "RTP-WFloat:SG2_LL_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2006)")
+}
+record(ao, "RTP-WFloat:SG1_H_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2007)")
+}
+record(ao, "RTP-WFloat:SG2_H_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2008)")
+}
+record(ao, "RTP-WFloat:SG1_L_PR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2009)")
+}
+record(ao, "RTP-WFloat:SG2_L_PR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2010)")
+}
+record(ao, "RTP-WFloat:CO_H_NR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2011)")
+}
+
+record(ao, "RTP-WFloat:CO_HH_WR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2012)")
+}
+
+record(ao, "RTP-WFloat:SG1_LRC_PR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2013)")
+}
+record(ao, "RTP-WFloat:SG2_LRC_PR") {
+  field(DTYP, "rtpSyncWriteAO")
+  field(VAL, "0")
+  field(OUT, "@RTP(0,2014)")
+}
+
+
+
 
 record(bo, "RTP-WBool:Test") {
   field(DTYP, "rtpSyncWriteBO")
