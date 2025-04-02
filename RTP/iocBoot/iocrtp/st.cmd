@@ -17,7 +17,9 @@ drvSyncRTPConfigure("RTPDevice", "192.168.127.1:50199 TCP", 0, 0)
 
 ## Load record instances
 #dbLoadRecords("db/rtp.db","user=ctrluser")
-#dbLoadRecords("db/RTPTest.vdb","user=ctrluser")
+
+#dbLoadRecords("db/RTPBI.db","user=ctrluser")
+
 #dbLoadRecords("db/RTPFloat.vdb")
 #dbLoadRecords("db/RTPMulti.vdb")
 
