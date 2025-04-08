@@ -928,6 +928,8 @@ int RTPSyncManager::ReadSBoolData(const biRecord *pr, bool &bvalue)
 		return recvbyte;
 	};
 
+	//printf("Bool-Value: %B\n", (unsigned int)ReadData[5]);
+	//bvalue =(bool)&ReadData[5];
 	memcpy(&bvalue, (bool*)&ReadData[5], sizeof(bool));
 	//epicsMutexUnlock(mutex);
 

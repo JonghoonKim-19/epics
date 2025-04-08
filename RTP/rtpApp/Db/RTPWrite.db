@@ -1,4 +1,4 @@
-#record(ao, "RTP-Write") {
+#  record(ao, "RTP-Write") {
 #  field(DTYP, "rtpSyncWriteAO")
 #  field(VAL, "0")
 #  field(OUT, "@RTP(0,139)")
@@ -34,6 +34,11 @@ record(ao, "RW:SG1_LL_WR") {
   field(VAL, "0")
   field(OUT, "@RTP(0,2005)")
 }
+record(ai, "RW:SG1_LL_WR_MO"){
+  field(INP, "RW:SG1_LL_WR.VAL NPP NMS")
+  field(SCAN, "1 second")
+}
+
 record(ao, "RW:SG2_LL_WR") {
   field(DTYP, "rtpSyncWriteAO")
   field(VAL, "0")

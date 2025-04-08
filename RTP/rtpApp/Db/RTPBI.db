@@ -65,65 +65,6 @@ record(bi, "RW:SG2_H_NR_Ptrip") {
 }
 
 
-record(bi, LPSV_Closed_ZS3503) {
-  field(DESC, "Bool value")
-  field(SCAN, "1 second")
-  field(PINI, "YES")
-  field(DTYP, "rtpSyncReadBI")
-  field(INP, "@RTP(0,5000)")
-  field(ZNAM, "OFF")
-  field(ONAM, "ON")
-}
-
-record(bi, HPSV_Closed_ZS3409) {
-  field(DESC, "Bool value")
-  field(SCAN, "1 second")
-  field(PINI, "YES")
-  field(DTYP, "rtpSyncReadBI")
-  field(INP, "@RTP(0,5001)")
-  field(ZNAM, "OFF")
-  field(ONAM, "ON")
-}
-
-
-record(bi, TurnningGearMotorRun) {
-  field(DESC, "Bool value")
-  field(SCAN, "1 second")
-  field(PINI, "YES")
-  field(DTYP, "rtpSyncReadBI")
-  field(INP, "@RTP(0,5002)")
-  field(ZNAM, "OFF")
-  field(ONAM, "ON")
-}
-
-
-record(bi, OilTankHeaterRun) {
-  field(DESC, "Bool value")
-  field(SCAN, "1 second")
-  field(PINI, "YES")
-  field(DTYP, "rtpSyncReadBI")
-  field(INP, "@RTP(0,5003)")
-  field(ZNAM, "OFF")
-  field(ONAM, "ON")
-}
-
-
-record(bi, RTP_BO_TEST4) {
-  field(DESC, "RTP BO Test")
-  field(DTYP, "rtpSyncReadBO")
-  field(OUT, "@RTP(0,520)")
-  field(ZNAM, "OFF")
-  field(ONAM, "ON")
-}
-
-record(ai, RTP_AI_SINE) {
-  field(SCAN, "1 second")
-  field(PINI, "YES")
-  field(DTYP, "rtpSyncReadAI")
-  field(VAL, "0")
-  field(INP, "@RTP(0,98)")
-}
-
 
 
 
