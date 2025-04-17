@@ -17,16 +17,16 @@ drvSyncRTPConfigure("RTPDevice", "192.168.127.1:50199 TCP", 0, 0)
 
 ## Load record instances
 #dbLoadRecords("db/rtp.db","user=ctrluser")
-
-dbLoadRecords("db/RTPBI.db")
-
+#dbLoadRecords("db/RTPBI.db")
 #dbLoadRecords("db/RTPFloat.vdb")
 #dbLoadRecords("db/RTPMulti.vdb")
+
 
 dbLoadRecords("db/RTPWaveform.db")
 dbLoadTemplate("db/RTPSignal2.sub")
 dbLoadRecords("db/RTPWrite.db")
-dbLoadRecords("db/PythonDB.db")
+
+#dbLoadRecords("db/RTPLI.db")
 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
@@ -34,6 +34,7 @@ iocInit
 ## Start any sequence programs
 #seq sncxxx,"user=ctrluser"
 #seq sncWaveToScalar
+
 seq sncWaveToScalar2
 seq sncWaveToScalar3
 seq sncWaveToScalar4

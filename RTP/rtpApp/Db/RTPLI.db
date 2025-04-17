@@ -1,0 +1,103 @@
+#record(longin, RW:Log_Power_Ptrip) {
+#  field(SCAN, "1 second")
+#  field(PINI, "YES")
+#  field(DTYP, "rtpSyncReadLI")
+#  field(VAL, "0")
+#  field(INP, "@RTP(0,500)")
+#}
+
+record(ai, RW:Log_Power_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3000)")
+}
+
+record(ai, RW:PZR_NR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3001)")
+}
+record(ai, RW:PZR_WR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3002)")
+}
+record(ai, RW:SG1_L_WR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3003)")
+}
+record(ai, RW:SG2_L_WR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3004)")
+}
+
+record(ai, RW:SG1_H_NR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3007)")
+}
+record(ai, RW:SG2_H_NR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3008)")
+}
+record(ai, RW:SG1_L_PR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3009)")
+}
+record(ai, RW:SG2_L_PR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3010)")
+}
+record(ai, RW:CO_H_NR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3011)")
+}
+record(ai, RW:CO_HH_WR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3012)")
+}
+record(ai, RW:SG1_LRC_PR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3013)")
+}
+record(ai, RW:SG2_LRC_PR_Ptrip) {
+  field(SCAN, "1 second")
+  field(PINI, "YES")
+  field(DTYP, "rtpSyncReadAI")
+  field(VAL, "0")
+  field(INP, "@RTP(0,3014)")
+}
+
+

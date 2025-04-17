@@ -4,7 +4,7 @@ record(waveform, RTPWaveformFLOAT) {
   field(SCAN, ".1 second")
   field(PINI, "NO")
   field(DTYP, "rtpSyncReadWF")
-  field(NELM, "146")
+  field(NELM, "159")
   field(FTVL, "FLOAT")
   field(INP, "@RTP(0,1085)")
 }

@@ -2,7 +2,7 @@ program sncWaveToScalar2
 
 option +r;
 
-float scalarPVFloat[146];
+float scalarPVFloat[159];
 assign scalarPVFloat to {
 "9-431-J-LT-0110A",     "9-431-J-LT-0110B",     "9-431-J-PA16B-01-202", "9-431-J-PT-0102A",
 "9-431-J-PT-0102B",     "9-431-J-PT-0190A",     "9-431-J-PT-0190B",     "9-431-J-TE-0132A",
@@ -40,10 +40,13 @@ assign scalarPVFloat to {
 "QIAS-P-008", 		"QIAS-P-009", 		"QIAS-P-011", 		"QIAS-P-013",
 "QIAS-P-014", 		"QIAS-P-015", 		"QIAS-P-016", 		"QIAS-P-017",
 "QIAS-P-018", 		"QIAS-P-019", 		"QIAS-P-020", 		"QIAS-P-021",
-"QIAS-P-023", 		"QIAS-P-Trouble"
+"QIAS-P-023", 		"QIAS-P-Trouble",   "RW:Log_Power_Ptrip",  "RW:PZR_NR_Ptrip", "RW:PZR_WR_Ptrip",
+"RW:SG1_L_WR_Ptrip","RW:SG2_L_WR_Ptrip","RW:SG1_H_NR_Ptrip", "RW:SG2_H_NR_Ptrip", "RW:SG1_L_PR_Ptrip",
+"RW:SG2_L_PR_Ptrip","RW:CO_H_NR_Ptrip", "RW:CO_HH_WR_Ptrip", "RW:SG1_LRC_PR_Ptrip","RW:SG2_LRC_PR_Ptrip"
+ 
 };
 
-float	waveFloatPV[146];
+float	waveFloatPV[159];
 assign	waveFloatPV to "RTPWaveformFLOAT";
 monitor waveFloatPV;
 evflag  evWave;

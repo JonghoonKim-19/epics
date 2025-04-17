@@ -1,4 +1,4 @@
-file "db/RTPAI.template"{ pattern 
+file  db/RTPAI.template { pattern 
 {SIGNAL}
 {9-431-J-LT-0110A}
 {9-431-J-LT-0110B}
@@ -146,9 +146,22 @@ file "db/RTPAI.template"{ pattern
 {QIAS-P-021}
 {QIAS-P-023}
 {QIAS-P-Trouble}
+{RW:Log_Power_Ptrip} 
+{RW:PZR_NR_Ptrip}
+{RW:PZR_WR_Ptrip}
+{RW:SG1_L_WR_Ptrip}
+{RW:SG2_L_WR_Ptrip}
+{RW:SG1_H_NR_Ptrip}
+{RW:SG2_H_NR_Ptrip}
+{RW:SG1_L_PR_Ptrip}
+{RW:SG2_L_PR_Ptrip}
+{RW:CO_H_NR_Ptrip}
+{RW:CO_HH_WR_Ptrip}
+{RW:SG1_LRC_PR_Ptrip}
+{RW:SG2_LRC_PR_Ptrip}
 }
 
-file "db/RTPLI.template"{ pattern 
+file  db/RTPLI.template { pattern 
 {SIGNAL}
 {9-431-J-LT-0110AI}
 {9-431-J-LT-0110BI}
