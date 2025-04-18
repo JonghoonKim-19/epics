@@ -806,12 +806,11 @@ int RTPSyncManager::ReadSFloatData(const aiRecord *pr, epicsFloat32 &fvalue)
 int RTPSyncManager::WriteSFloatData(const aoRecord *pr)
 {
 	devPvt *pRtp = (devPvt*)pr->dpvt;
-	epicsMutexLock(mutex);
 	int recByte = writeSMsgCommand(FLOAT_WRITE, 7, pRtp->cpu_node, pRtp->index_value, pr->val);
 
+	//epicsMutexLock(mutex);
+#if 0
 	printf("ReciveByte: %d\n", recByte);
-
-#if 1
 	char ReadData[7];
 	ssize_t recvbyte = recv(mptty->fd, (char*)&ReadData, sizeof(ReadData), 0);
 
@@ -820,7 +819,7 @@ int RTPSyncManager::WriteSFloatData(const aoRecord *pr)
 		return -1;
 	};
 #endif
-	epicsMutexUnlock(mutex);
+	//epicsMutexUnlock(mutex);
 
 	//char resp = ReadData[4];
 	//printf("Response-code: %d\n", resp);
